@@ -1,0 +1,31 @@
+body {
+    margin: 0; font-family: sans-serif; background: var(--bg); color: var(--fg);
+}
+:root {
+    --bg: #f8f9fa;
+    --fg: #222;
+    --card-bg: #fff;
+    --accent: #00b894;
+}
+body.dark {
+    --bg: #222;
+    --fg: #f8f9fa;
+    --card-bg: #333;
+    --accent: #fdcb6e;
+}
+header { display: flex; align-items: center; justify-content: space-between; padding: 1em 2em; }
+#metrics-cards {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1em;
+    margin: 1em 2em;
+}
+.card {
+    background: var(--card-bg); box-shadow: 0 1px 6px #0002; border-radius: 8px; padding: 1em; min-height: 80px;
+}
+#charts { display: flex; gap: 2em; justify-content: space-around; margin: 2em 0; }
+#charts canvas { width: 360px !important; height: 140px !important; background: var(--card-bg); }
+#process-table-section { margin: 2em; }
+table { width: 100%; border-collapse: collapse; background: var(--card-bg); }
+th, td { padding: 0.5em 1em; text-align: left; border-bottom: 1px solid #e1e1e180; }
+th { cursor: pointer; }
+tr.highlight { background: var(--accent) !important; color: #fff; }
+#theme-toggle { background: none; border: none; font-size: 1.1em; cursor: pointer; }
