@@ -27,12 +27,6 @@ The backend is built using Python Flask and `psutil`, while the frontend uses HT
 | API | REST (JSON) |
 | Optional Remote Access | ngrok |
 
----
-
-## Project Structure
-
-
----
 
 ## Backend Setup
 
@@ -41,19 +35,7 @@ cd backend
 python -m venv venv
 ```
 
-## Activate virtual environment:
-
-Windows:
-```bash
-venv\Scripts\activate
-```
-
-Linux/macOS:
-```bash
-source venv/bin/activate
-```
-
-Install dependencies:
+## Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
@@ -82,7 +64,6 @@ Open index.html directly in your browser
 or run:
 
 python -m http.server 8000
-
 
 Visit:
 
@@ -114,5 +95,5 @@ Returns CPU, memory, disk, and network stats.
 Returns running processes sorted by CPU usage.
 
 ## Screenshots
-![Dashboard](screenshots/dashboard.png)
-![Processes](screenshots/process-table.png)
+![Dashboard](dashboard.jpeg)
+![Processes](processes.jpeg)
